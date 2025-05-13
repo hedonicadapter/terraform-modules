@@ -23,5 +23,6 @@ provider "azurerm" {
 }
 
 module "subscription" {
-  source = "./modules/subscription"
+  source         = "./modules/subscription"
+  location_short = var.location_short
 }
